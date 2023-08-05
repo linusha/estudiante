@@ -32,7 +32,7 @@ export class EstudianteModel extends ViewModel {
           this.iframe = new HTMLMorph({
             extent: pt(320, 180),
             cssDeclaration: '',
-            html: `<iframe src=${url} style="width:100%; height: 100%"></iframe>`
+            html: `<iframe src=${url} frameborder="0" style="width:100%; height: 100%"></iframe>`
           });
           this.iframe.openInWorld();
         }
