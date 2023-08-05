@@ -30,11 +30,12 @@ export class EstudianteModel extends ViewModel {
           this.iframe = null;
           this.iframeNode = null;
           this.iframe = new HTMLMorph({
-            extent: pt(320, 180),
+            extent: pt(1800, 1050),
             cssDeclaration: '',
             html: `<iframe src=${url} frameborder="0" style="width:100%; height: 100%"></iframe>`
           });
           this.iframe.openInWorld();
+          this.iframe.position = pt(75, 75);
         }
       }
     };
@@ -45,6 +46,7 @@ export class EstudianteModel extends ViewModel {
     this.ui.name.textString = name;
     this.view.name = name;
     await this.promptForSourceURL();
+    this.view.position = pt(100, 100);
   }
 
   showIframe () {
