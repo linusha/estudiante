@@ -15,7 +15,6 @@ part(Estudiante).openInWorld()
 ## Open Problems
 
 - auto focus of `iframe` node after unhiding slides does not work
-- `ViewModel` is sometimes not attached upon first import. Saving `ui.cp.js` resolves this usually.
 
 ## License
 
